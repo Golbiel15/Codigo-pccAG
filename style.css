@@ -1,0 +1,275 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Open Sans', sans-serif;
+    text-decoration: none;
+    list-style: none;
+    border: none;
+}
+.background{
+    background-image: url(img/back.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;    
+    max-width: 100%;
+    height: 70vh;
+}
+
+header{
+    display: flex;
+    justify-content: space-around;
+    padding-top: 1rem;
+    align-items: center;
+    text-align: center;
+    width: 100%;
+    top: 0;
+    right: 0;
+    z-index: 1000;
+    position: fixed;
+    transition: all .35% ease;
+    background-color: rgb(75, 75, 75);
+    padding: 14px 0;
+    border-bottom: 3px solid #1620ad;
+}
+
+.logo{
+    display: flex;
+    font-size: 1rem;
+}
+
+.cabeçalholink{
+    display: flex;
+    font-size: 1.2rem;
+    gap: 3rem;
+    align-items: center;
+    position: static;
+}
+
+.cabeçalholink a{
+    color: rgb(0, 0, 0);
+    font-weight: 700;
+    transition: 0.3s;
+
+}
+
+.cabeçalholink a:hover{
+    color: #141694;
+}
+
+.icon span{
+    font-size: 2rem;
+    cursor: pointer;
+}
+
+.icon span:hover{
+    color: #141694;
+}
+
+.logarregistrar{
+    align-items: end;
+}
+
+.logarregistrar button{
+    background-color: #141694;
+    padding: 1rem 3rem 1rem 3rem;
+    border-radius: 5px;
+    color: #fff;
+    font-size: 1rem;
+    cursor:pointer;
+    transition: 0.3s;
+}
+.logarregistrar button:hover{
+    background-color: #000;
+    color: #fff;
+    transform: scaleY(1.2);
+}
+
+.meio{
+    padding: 7rem 0 0 8.5rem;
+}
+
+.meio h1{
+    display: flex;
+    font-size: 4rem;
+    width: 60vw;
+    margin: 0;
+    padding: 0;
+}
+
+.meio button{
+    background-color: #c8815f;
+    padding: 1rem 3rem 1rem 3rem;
+    border-radius: 5px;
+    color: #fff;
+    font-size: 1rem;
+    cursor:pointer;
+    transition: 0.3s;
+}
+.meio button:hover{
+    background-color: #000;
+    color: #fff;
+    transform: scaleY(1.2);
+}
+
+form {
+    opacity: 0;
+    transition: opacity 1s linear;
+    background-color: #ffffff;
+    border-radius: 10px;
+    float: right;
+    padding: 20px;
+    margin-right: 50px;
+    position: relative;
+    bottom: 70px;
+}
+
+.mostrar-formulario{
+    opacity: 1;
+}
+
+.mostrar-formulario h3{
+    margin: 0;
+}
+
+input {
+    display: block;
+    background: #F9F9F9;
+    border: 1px solid #E6E6E6;
+    border-radius: 5px;
+    height: 40px;
+    width: 250px;
+}
+
+textarea {
+    display: block;
+    height: 80px;
+    width: 250px;
+    background: #F9F9F9;
+    border: 1px solid #E6E6E6;
+    border-radius: 5px;
+}
+
+.titulo-formulario {
+    font-size: 24px;
+    color: #252B42;
+    margin-bottom: 30px;
+    text-align: center;
+}
+
+label {
+    font-size: 14px;
+    color: #252B42;
+    height: 20px;
+    padding: 0;
+    margin: 0;
+}
+
+label p{
+    margin-top: 20px;
+    height: 20px;
+}
+
+button {
+    width: 250px;
+    height: 40px;
+    cursor: pointer;
+    border: none;
+    border-radius: 5px;
+    background: rgb(236, 236, 236);
+    color: #FFFFFF;
+    border-radius: 50px;
+}
+
+section{
+    padding-top: 7rem;
+}
+section h1{
+    align-items: center;
+    text-align: center;
+    font-size: 2rem;
+}
+.Container-card-1{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 4rem;
+    padding-top: 2rem;
+}
+
+.cards img{
+    width: 300px;
+    height: auto;
+    transition: 0.35s ease;
+    border-radius: 10px;
+    background-color: #FFFFFF;
+    border: 2px solid #302d2d;
+    box-shadow: 0 0 30px 5px rgba(34, 30, 27, 0.385), 0 0 30px 10px rgba(45, 35, 18, 0.325);
+}
+
+.cards img:hover{
+    transform: scale(0.9) translateY(-5px);
+    cursor: pointer;
+    border: 2px solid #FFBC3A;
+}
+
+.container-instrumentos{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 4rem;
+    padding-top: 2rem;
+    
+}
+
+.inst img{
+    width: 300px;
+    height: auto;
+    transition: 0.35s ease;
+    border-radius: 10px;
+    background-color: #FFFFFF;
+    border: 2px solid #302d2d;
+    box-shadow: 0 0 30px 5px rgba(34, 30, 27, 0.385), 0 0 30px 10px rgba(45, 35, 18, 0.325);
+}
+.inst img:hover{
+    transform: scale(0.9) translateY(-5px);
+    cursor: pointer;
+    border: 2px solid #FFBC3A;
+}
+
+#Contato{
+    display: flex;
+    gap: 5rem;
+    justify-content: space-around;
+    background-color: #111;
+    padding: 8rem;
+    margin-top: 5rem;
+    display: grid;
+    border-top: 6px solid #1620ad;
+	grid-template-columns: repeat(auto-fit, minmax(200px, auto));
+}
+#Contato h2{
+    color: #fff;
+    text-align: center;
+
+}
+
+.meio-contato h3{
+    color: #fff;
+    font-size: 23px;
+    margin-bottom: 1.6rem;
+}
+
+.meio-contato li{
+    margin-bottom: 15px;
+}
+
+.meio-contato li a{
+    display: block;
+    color: #555;
+    font-weight: 600;
+    transition: all .35s ease;
+}
+.meio-contato p{
+    color: #555;
+}

@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="imagens/favicon.ico" type="image/x-icon">
+    <title>Dalagnol's Music</title>
+</head>
+<body>
+    <div class="background">
+        <header>
+            <div class="logo">
+                <h1>Dalagnol's Music</h1>
+            </div><!--logo-->
+
+            <div class="cabeçalholink">
+                <li>
+                    <a href="">Inicio</a>
+                </li>
+                <li>
+                    <a href="">Loja</a>
+                </li>
+                <li>
+                    <a href="a">Luthier</a>
+                </li>
+                <li>
+                    <a class="link-cabecalho" onclick="chameOAbacate()">Contato</a>
+                </li>
+                <div class="icon"><span><ion-icon name="bag-outline"></ion-icon></span></div>
+            </div><!--cl-->
+            <div class="logarregistrar">
+                <a href="login.html"><button class="btn1 first">Entrar</button></a>
+                <a href="registrar.html"><button class="btn1 first">Cadastrar-se</button></a>
+            </div>
+        </header>
+
+        <div class="meio">
+            <h1>FRETE GRATIS EM PRODUTOS ACIMA DE MIL REAIS</h1>
+            <p>Diversas opções de cores</p>
+            <button>Ver agora</button>
+            <form id="formulario-contato" action="https://formsubmit.co/gabreilpgs1505@gmail.com" method="POST">
+                <h3 class="titulo-formulario">Entre em contato</h3>
+                <label>
+                    <p>Nome</p>
+                    <input  type="text" name="Nome" placeholder="Digite seu Nome" required/>
+                </label>
+    
+                <label>
+                    <p>E-mail</p>
+                    <input type="email" name="email" placeholder="Digite seu E-mail" required/>
+                </label>
+    
+                <label>
+                    <p>WhatsApp</p>
+                    <input type="tel" name="telefone" placeholder="Digite seu telefone" required/>
+                </label>
+    
+                <label>
+                    <p>Fale Conosco</p>
+                    <textarea name="info" placeholder="Qual sua dúvida?"></textarea>
+                </label>
+    
+                <button type="submit">Enviar</button>
+            </form>
+        </div>
+
+
+
+    </div><!--background-->
+
+    <section>
+        <h1>DESTAQUES DA SEMANA</h1>
+        <div class="Container-card-1">
+            <div class="cards">
+                <img src="img/cor.jpg">
+            </div>
+            <div class="cards">
+                <img src="img/amp.jpg">
+            </div>
+            <div class="cards">
+                <img src="img/pra.jpg">
+            </div>
+        </div><!--cc1-->
+    </section>
+
+    <section>
+        <h1>INSTRUMENTOS DA SEMANA</h1>
+        <div class="container-instrumentos">
+            <div class="inst">
+                <img src="img/bat.jpg">
+            </div>
+            <div class="inst">
+                <img src="img/vio.jpg">
+            </div>
+            <div class="inst">
+                <img src="img/gui.jpg">
+            </div>
+            <div class="inst">
+                <img src="img/bai.jpg">
+            </div>
+        </div><!--instrumentos-->
+    </section>
+
+    <section class="Contato" id="Contato">
+        <h2>Dalagnol's Music</h2>
+		<div class="meio-contato">
+			<h3>Categorias</h3>
+			<li><a href="#">Áudio</a></li>
+			<li><a href="#">Cordas</a></li>
+			<li><a href="#">Percussão</a></li>
+			<li><a href="#">Sopro</a></li>
+            <li><a href="#">Tecla</a></li>
+			</div>
+		</div>
+
+		<div class="meio-contato">
+			<h3>Informações</h3>
+			<li><a href="#">Fale Conosco</a></li><!--formulario-->
+			<li><a href="#">Endereço</a></li>
+			<li><a href="#">Termos</a></li>
+			<li><a href="#">Politica de garantia e troca</a></li>
+		</div>
+
+		<div class="meio-contato">
+			<h3>Suporte</h3>
+			<li><a href="#">Preços</a></li>
+			<li><a href="#">Free Shipping</a></li>
+			<li><a href="#">Gift Cards</a></li>
+		</div>
+
+		<div class="meio-contato">
+			<h3>Sobre nós</h3>
+            <p>A Dalagnol's Music foi criada a partir da necessidade de se ter uma loja de música de qualidade, que tivesse os melhores preços do mercado e um atendimento excelente</p>
+
+		</div>
+    </div>
+
+	</section>
+    <script>
+        let formulario = document.getElementById("formulario-contato")
+
+        function chameOAbacate(){
+            formulario.className = "mostrar-formulario"
+        }
+    </script>
+</body>
+</html>
